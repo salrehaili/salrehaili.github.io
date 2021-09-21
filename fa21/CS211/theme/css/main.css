@@ -59,7 +59,7 @@ a.anchor-link {
   padding: 30px 40px 40px 0;
 }*/
 
-.th{
+th{
       -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     font-family: "Work Sans", sans-serif;
@@ -74,7 +74,7 @@ a.anchor-link {
     border-top: none;
     vertical-align: middle;
 }
-.table{
+table{
       -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     line-height: 1.42857143;
