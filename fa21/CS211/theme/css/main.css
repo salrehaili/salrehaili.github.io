@@ -97,3 +97,7 @@ a.anchor-link {
 .staff .name .biohover:active .bio {
   visibility: visible;
 }
+
+.table-responsive .table {
+    max-width: none;
+}
