@@ -98,10 +98,8 @@ a.anchor-link {
   visibility: visible;
 }
 
-
-
-
 .table-responsive .table {
     max-width: none;
-    -webkit-overflow-scrolling: touch !important;
 }
+
+
