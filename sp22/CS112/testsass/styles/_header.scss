@@ -1,0 +1,17 @@
+@mixin felxCenter() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+header{
+	@include flexCenter();
+	background: lightblue;
+	color: $textColor;
+	button{
+		background: $PrimaryBtn;
+	}
+}
+
+

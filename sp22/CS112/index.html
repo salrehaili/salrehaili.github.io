@@ -1,0 +1,1318 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CS211</title>
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <link rel="stylesheet" type="text/css" href="./theme/css/main.css" />
+        <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+        <meta name="description" content="Algorithms and Datastructures">
+        <meta name="keywords" content="Algorithms, Data structures, Datastructures, خوارزميات, تراكيب بيانات">
+        <meta name="author" content="Sameer M. Alrehaili">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-B45HWK74CF"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-B45HWK74CF');
+        </script>
+
+
+
+        <style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+.iframe-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
+
+
+
+</head>
+
+<!--<body id="index" class="home">-->
+    <body>
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="./../../">
+          Home
+        </a>
+
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+
+            <li><a href="./">CS211</a></li>
+            <li><a href="./office-hours.html">Office Hours</a></li>
+            <!--<li><a href="./policies.html">Policies</a></li>-->
+            <!--<li><a href="./staff.html">Staff</a></li>-->
+
+          <!--<li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                  <li><a href="./materials.html">Materials</a></li>
+                  <li><a href="./python-reference.html">Python Reference</a></li>
+                  <li><a href="./supplemental-videos.html">Supplemental Videos</a></li>
+            </ul>
+          </li>-->
+
+          <!--<li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Links <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                  <li><a href="http://data8.org/connector/">Connectors</a></li>
+                  <li><a href="http://data8.datahub.berkeley.edu/">DataHub</a></li>
+                  <li><a href="http://data8.org/datascience/">Datascience Docs</a></li>
+                  <li><a href="https://edstem.org/us/courses/7337/discussion/">Ed</a></li>
+                  <li><a href="http://data.berkeley.edu">Berkeley Division of Data Sciences</a></li>
+            </ul>
+          </li>-->
+
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+  <div class="container">
+<section id="content">
+
+
+<h2>Announcements</h2>
+
+<div id="announcements">
+
+
+
+<div class="announcement" id='announcement-0'>
+       <ul class="pager">
+           <li class='announcement-btn-older'>
+               <a>
+                   <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                   older
+               </a>
+           </li>
+           <li>
+               <span class="announcement-date">Wed 10 November 2021</span>
+           </li>
+           <li class='announcement-btn-newer'>
+               <a>
+                   newer
+                   <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+               </a>
+           </li>
+       </ul>
+       <ul>
+<li>Assignment 5 is being released today! Due next Sunday, 14 Nov at 08:00am.</li>
+<li>Check out our staff-created the <a href="./assets/docs/assign05.pdf" target="_blank">worksheet</a>, and <a href="https://youtu.be/GkZnLPbM1ZE" target="_blank">video </a> to learn how to do it.</li>
+<li>Related codes are available in <a href="https://github.com/salrehaili/CS211_Fall2021/blob/main/Linked_List/Linked_List.java" target="_blank">SSL Linked List</a>.</li>
+</ul>
+    </div>
+
+
+
+
+
+<div class="announcement" id='announcement-1'>
+       <ul class="pager">
+           <li class='announcement-btn-older'>
+               <a>
+                   <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                   older
+               </a>
+           </li>
+           <li>
+               <span class="announcement-date">Tue 02 November 2021</span>
+           </li>
+           <li class='announcement-btn-newer'>
+               <a>
+                   newer
+                   <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+               </a>
+           </li>
+       </ul>
+       <ul>
+<li>Assignment 4 is being released today! Due next Sunday, 07 Nov at 08:00am.</li>
+<li>Check out our staff-created the <a href="./assets/docs/assign04.pdf" target="_blank">worksheet</a>, and <a href="https://youtu.be/01WOfHiQYK8" target="_blank">video1 </a> to learn how to do it.</li>
+</ul>
+    </div>
+
+
+
+
+   
+      <div class="announcement" id='announcement-2'>
+       <ul class="pager">
+           <li class='announcement-btn-older'>
+               <a>
+                   <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                   older
+               </a>
+           </li>
+           <li>
+               <span class="announcement-date">Tue 04 October 2021</span>
+           </li>
+           <li class='announcement-btn-newer'>
+               <a>
+                   newer
+                   <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+               </a>
+           </li>
+       </ul>
+       <ul>
+<li>Assignment 3 is being released today! Due next Wednesday, 06 Oct at 08:00am.</li>
+<li>Check out our staff-created the <a href="./assets/docs/assign03.pdf" target="_blank">worksheet</a>, and <a href="https://youtu.be/vegrdtxyn5Y" target="_blank">video1 </a> and <a href="https://youtu.be/a3nL40UR--A" target="_blank"> video2 </a> to learn how to do it.</li>
+</ul>
+    </div>
+
+
+
+
+
+
+   
+    <div class="announcement" id='announcement-3'>
+       <ul class="pager">
+           <li class='announcement-btn-older'>
+               <a>
+                   <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                   older
+               </a>
+           </li>
+           <li>
+               <span class="announcement-date">Tue 14 September 2021</span>
+           </li>
+           <li class='announcement-btn-newer'>
+               <a>
+                   newer
+                   <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+               </a>
+           </li>
+       </ul>
+       <ul>
+<li>Assignment 2 is being released today! Due next Sunday, 19 Sep at 10:00am.</li>
+<li>Check out our staff-created <a href="./assets/docs/assignment02.pdf" target="_blank">the worksheet</a> <a href="https://youtu.be/0fJXqUPHw0k" target="_blank">, and video </a> to learn how to do it.</li>
+</ul>
+    </div>
+
+
+    <div class="announcement" id='announcement-4'>
+       <ul class="pager">
+           <li class='announcement-btn-older'>
+               <a>
+                   <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                   older
+               </a>
+           </li>
+           <li>
+               <span class="announcement-date">Sun 05 Septemper 2021</span>
+           </li>
+           <li class='announcement-btn-newer'>
+               <a>
+                   newer
+                   <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+               </a>
+           </li>
+       </ul>
+       <ul>
+<li>Assignment 1 is being released today! Due next Thursday, 09 Sep at 03:00pm.</li>
+<li>Check out our staff-created <a href="./assets/docs/assignment01.pdf" target="_blank">the worksheet</a> <a href="https://www.youtube.com/watch?v=Gp8KN5kqrEk" target="_blank">, and video </a> to learn how to do it.</li>
+
+</ul>
+    </div>
+    <div class="announcement" id='announcement-5'>
+       <ul class="pager">
+           <li class='announcement-btn-older'>
+               <a>
+                   <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                   older
+               </a>
+           </li>
+           <li>
+               <span class="announcement-date">Wed 18 August 2021</span>
+           </li>
+           <li class='announcement-btn-newer'>
+               <a>
+                   newer
+                   <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+               </a>
+           </li>
+       </ul>
+       <ul>
+<li>Welcome to CS211 You can find our tentative course schedule below.</li>
+
+</ul>
+    </div>
+</div><!-- /#posts-list -->
+
+<h2>Calendar</h2>
+    <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Instructors</strong>: Dr. Sameer Mabrouk A Alrehaili</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Lectures</strong>: </p>
+<ul>
+    <li>CSNB2 &nbsp;Sun and Tue 09:45 - 11:25</li>
+    <li>ISNB1&nbsp;Mon and Wed 08:00 - 09:40</li>
+    <li>ISNB2&nbsp;Mon and Wed 09:45 - 11:25</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="output_subarea output_stream output_stdout output_text">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div class="table-responsive-sm">
+<table class="table table-striped">
+<thead>
+<tr>
+<th class="header">Week</th>
+<th class="header">Lecture Number</th>
+<th class="header">Date</th>
+<th class="header">Topic</th>
+<th class="header">Lecture</th>
+<th class="header">Reading</th>
+<th class="header">Lab Worksheets</th>
+<th class="header">Assignment</th>
+</tr>
+</thead>
+<tbody>
+<tr class="wednesday">
+<td rowspan="span">
+Week 1
+</td><td>
+1
+</td><td>
+Sun 29 Aug
+</td><td>
+Induction
+</td><td>
+<a href="./assets/docs/CS211_Sep2021_00.pptx.pdf" target="_blank"><strong class="label label-lecture">Lecture0</strong></a>
+
+<a href="./assets/docs/CS211_Sep2021_01.pptx.pdf" target="_blank"><strong class="label label-lecture">Lecture1</strong></a>
+
+
+<!--<a href="./assets/docs/CS211_Sep2021_00.pptx.pdf" target="_blank">Induction</a>, <a href="./assets/docs/CS211_Sep2021_01.pptx.pdf" target="_blank">Intro to Algorithms</a>-->
+</td><td>
+Chapter1:Introduction
+</td><td>
+<div></div>
+</td><td>
+<div></div>
+</td></tr>
+<tr class="wednesday">
+<td>
+</td><td>
+2
+</td><td>
+Tue 31 Aug
+</td><td>
+Reviewing
+</td><td>
+
+</td><td>
+
+</td><td>
+</td><td>
+<div></div>
+</td></tr>
+<tr class="monday">
+<td rowspan="span">
+Week 2
+</td><td>
+3
+</td><td>
+Sun 05 Sep
+</td><td>
+Intoduction Part II
+</td><td>
+<!--<a href="./assets/docs/Part1_Overview+and+Review_Rasha.ppt.pdf" target="_blank">Intoduction Part II</a>-->
+
+<a href="./assets/docs/Part1_Overview+and+Review_Rasha.ppt.pdf" target="_blank"><strong class="label label-lecture">Lecture02</strong></a>
+
+</td><td>
+Chapter1:Introduction
+</td><td>
+
+</td><td>
+   <!-- <div><a href="./assets/docs/assignment01.pdf" target="_blank">Assignment 01</a> (Due Wed 8 Sep) <a href="./assets/docs/assign01_sol.pdf" target="_blank"> Solution</a></div>-->
+
+    <p><a href="./assets/docs/assignment01.pdf" target="_blank"><strong class="label label-assignment">Assignment01</strong></a><strong class="label label-due">Due Wed 8 Sep</strong></p>
+
+    <a href="./assets/docs/assign01_sol.pdf" target="_blank"><strong class="label label-assignment_sol">Solutions</strong></a>
+<div></div>
+</td></tr>
+<tr class="monday">
+<td>
+</td><td>
+4
+</td><td>
+Tue 07 Sep
+</td><td>
+Lab
+</td><td>
+
+<a href="./assets/docs/Part1_Overview+and+Review_Rasha.ppt.pdf" target="_blank"><strong class="label label-lecture">Lecture03</strong></a>
+<a href="https://youtu.be/Gp8KN5kqrEk" target="_blank"><strong class="label label-disc">Video</strong></a>
+
+<!--<a href="./assets/docs/Part1_Overview+and+Review_Rasha.ppt.pdf" target="_blank">Slides</a>, <a href="https://youtu.be/Gp8KN5kqrEk" target="_blank">Video</a>-->
+</td><td>
+Chapter1:Introduction
+</td><td>
+    <div>
+        <a href="./assets/docs/Lab01.pdf" target="_blank"><strong class="label label-lab">Lab1</strong></a>
+
+        <a href="./assets/docs/Lab01_sol.pdf" target="_blank"><strong class="label label-lab">Solved</strong></a>
+
+        <!--<a href="./assets/docs/Lab01.pdf" target="_blank"> Lab 01 Worksheet</a> <a href="./assets/docs/Lab01_sol.pdf" target="_blank"> Solutions</a>-->
+    </div>
+</td><td>
+    <!--assginment-->
+</td></tr>
+<tr class="wednesday">
+<td rowspan="span">
+Week 3
+</td>
+<td>
+
+5
+</td><td>
+Sun 12 Sep
+</td><td>
+Complexity Analysis Part I
+</td><td>
+<!--<a href="./assets/docs/Part2_Analysis+tools_Rasha_1.pdf" target="_blank">Slides</a>, <a href="https://youtu.be/0fJXqUPHw0k" target="_blank">Video</a>-->
+
+
+<a href="./assets/docs/Part2_Analysis+tools_Rasha_1.pdf" target="_blank"><strong class="label label-lecture">Lecture04</strong></a>
+<a href="https://youtu.be/0fJXqUPHw0k" target="_blank"><strong class="label label-disc">Video</strong></a>
+
+
+
+</td><td>
+Chapter2: Algorithm Analysis
+</td><td>
+</td><td>
+
+</td></tr>
+<tr class="wednesday">
+<td>
+
+</td><td>
+6
+</td><td>
+Tue 14 Sep
+</td><td>
+Lab
+</td><td>
+    <!--<a href="https://youtu.be/E6rPY9J7miY" target="_blank">Video1</a>, <a href="https://youtu.be/aSNGm3jwq5o" target="_blank">Video2</a>-->
+
+
+
+    <a href="https://youtu.be/E6rPY9J7miY" target="_blank"><strong class="label label-disc">Video</strong></a>
+<a href="https://youtu.be/aSNGm3jwq5o" target="_blank"><strong class="label label-disc">Video</strong></a>
+
+
+</td><td>
+</td><td>
+    <div>
+        <!--<a href="./assets/docs/Lab02.pdf" target="_blank"> Lab 02 Worksheet</a>-->
+
+        <a href="./assets/docs/Lab02.pdf" target="_blank"><strong class="label label-lab">Lab2</strong></a>
+        <a href="https://github.com/salrehaili/CS211_Fall2021/tree/main/Common_Algorithms" target="_blank"><strong class="label label-code">code</strong>
+
+    </div>
+</td><td>
+    <div>
+        <!--<a href="./assets/docs/assignment02.pdf" target="_blank">Assignment 02</a> (Due Sun 19 Sep)-->
+
+
+<p><a href="./assets/docs/assignment02.pdf" target="_blank"><strong class="label label-assignment">Assignment02</strong></a><strong class="label label-due">Due Sun 19 Sep</strong></p>
+<a href="./assets/docs/assign02_sol_v1.pdf" target="_blank"><strong class="label label-assignment_sol">Solutions_v1</strong></a>
+<a href="./assets/docs/assign02_sol_v2.pdf" target="_blank"><strong class="label label-assignment_sol">Solutions_v2</strong></a>
+
+    </div>
+</td></tr>
+<tr class="monday">
+    <td rowspan="span">
+Week 4
+</td>
+<td>
+7
+</td><td>
+Sun 19 Sep
+</td><td>
+Complexity Analysis Part II
+</td><td>
+<!--slides-->
+<!--<a href="./assets/docs/Part2_Analysis+tools_Rasha_2.ppt.pdf" target="_blank">Slides</a>, <a href="https://youtu.be/qU7T4MoYkI4" target="_blank">Video1</a>-->
+
+
+
+<a href="./assets/docs/Part2_Analysis+tools_Rasha_2.ppt.pdf" target="_blank"><strong class="label label-lecture">Lecture05</strong></a>
+<a href="https://youtu.be/qU7T4MoYkI4" target="_blank"><strong class="label label-disc">Video</strong></a>
+
+</td><td>
+<!--Reading-->
+</td><td>
+<div>
+    <!--Lab worksheet-->
+    <!--<a href="./assets/docs/Lab03.pdf" target="_blank"> Lab 03 Worksheet</a>-->
+
+    <a href="./assets/docs/Lab03.pdf" target="_blank"><strong class="label label-lab">Lab3</strong></a>
+</div>
+</td><td>
+<div>
+<!--assignment-->
+    
+</div>
+</td></tr>
+
+<tr class="monday">
+    <td>
+
+</td>
+<td>
+8
+</td><td>
+Tue 21 Sep
+</td><td>
+Lab
+</td><td>
+<!--slides-->
+</td><td>
+<!--Reading-->
+</td><td>
+<div>
+    <!--Lab worksheet-->
+    <a href="./assets/docs/Lab04.pdf" target="_blank"><strong class="label label-lab">Lab4</strong></a>
+</div>
+</td><td>
+<div>
+<!--assignment-->
+    
+</div>
+</td></tr>
+
+<tr class="wednesday">
+    <td rowspan="span">
+Week 5
+</td>
+<td>
+9
+</td><td>
+Sun 26 Sep
+</td><td>
+Arrays and Searching algorithms
+</td><td>
+<!--slides-->
+<a href="./assets/docs/Part3_Arrays+and+Searching+Algorithms_modified.pdf" target="_blank"><strong class="label label-lecture">Lecture06</strong></a><a href="https://youtu.be/eiKspqbw7dM" target="_blank"><strong class="label label-disc">Video</strong></a><a href="https://youtu.be/Q9bhxh5rCpg" target="_blank"><strong class="label label-disc">Video</strong></a>
+<a href="https://youtu.be/5Gl4MoPHZKI" target="_blank"><strong class="label label-disc">Video</strong></a>
+
+</td><td>
+<!--Reading-->
+</td><td>
+<div>
+    <!--Lab worksheet-->
+    <a href="./assets/docs/Lab05.pdf" target="_blank"><strong class="label label-lab">Lab5</strong></a><a href="./assets/docs/Lab06.pdf" target="_blank"><strong class="label label-lab">Lab6</strong></a>
+</div>
+</td><td>
+<div>
+<!--assignment-->
+    
+</div>
+</td></tr>
+
+<tr class="wednesday">
+    <td>
+</td>
+<td>
+10
+</td><td>
+Tue 28 Sep
+</td><td>
+Lab
+</td><td>
+<!--slides-->
+<!--<a href="https://youtu.be/Q9bhxh5rCpg" target="_blank"><strong class="label label-disc">Video</strong></a>
+<a href="https://youtu.be/5Gl4MoPHZKI" target="_blank"><strong class="label label-disc">Video</strong></a>-->
+
+</td><td>
+<!--Reading-->
+</td><td>
+<div>
+    <!--Lab worksheet-->
+    <!--<a href="./assets/docs/Lab06.pdf" target="_blank"><strong class="label label-lab">Lab6</strong></a>-->
+
+</div>
+</td><td>
+<div>
+<!--assignment-->
+    
+</div>
+</td></tr>
+
+
+<tr class="monday">
+    <td rowspan="span">
+Week 6
+</td>
+<td>
+11
+</td><td>
+Sun 03 Oct
+</td><td>
+Arrays and Searching algorithms
+</td><td>
+<!--slides-->
+<a href="./assets/docs/Lecture09.pdf" target="_blank"><strong class="label label-lecture">Lecture07</strong></a><a href="https://youtu.be/vegrdtxyn5Y" target="_blank"><strong class="label label-disc">Video</strong></a><a href="https://youtu.be/a3nL40UR--A" target="_blank"><strong class="label label-disc">Video</strong></a>
+</td><td>
+<!--Reading-->
+</td><td>
+<div>
+    <!--Lab worksheet-->
+</div>
+</td><td>
+<div>
+<!--assignment-->
+<p><a href="./assets/docs/assign03.pdf" target="_blank"><strong class="label label-assignment">Assignment03</strong></a><strong class="label label-due">Due Wed 06 Oct</strong></p><a href="./assets/docs/assign03_sol.pdf" target="_blank"><strong class="label label-assignment_sol">Solutions</strong></a>
+</div>
+</td></tr>
+
+<tr class="monday">
+    <td>
+</td>
+<td>
+12
+</td><td>
+Tue 05 Oct
+</td><td>
+Lab
+</td><td>
+<!--slides-->
+</td><td>
+<!--Reading-->
+</td><td>
+<div>
+    <!--Lab worksheet-->
+    <a href="https://github.com/salrehaili/CS211_Fall2021/tree/main/Arrays_Search" target="_blank"><strong class="label label-code">code</strong>
+</div>
+</td><td>
+<div>
+<!--assignment-->
+    
+</div>
+</td></tr>
+
+
+<tr class="wednesday">
+    <td rowspan="span">
+Week 7
+</td>
+<td>
+13
+</td><td>
+Sun 10 Oct
+</td><td>
+Sorting Algorithms
+</td><td>
+<!--slides-->
+<a href="./assets/docs/CS211_Sep2021_06.pptx.pdf" target="_blank"><strong class="label label-lecture">BubbleSort</strong></a><a href="./assets/docs/Part4_SortingAlgorithms.pptx.pdf" target="_blank"><strong class="label label-lecture">Lecture08</strong></a><a href="https://youtu.be/dnlnLppf14o" target="_blank"><strong class="label label-disc">Video</strong></a><a href="https://youtu.be/XGYY83pnDiE" target="_blank"><strong class="label label-disc">Video</strong></a>
+
+</td><td>
+<!--Reading-->
+</td><td>
+<div>
+    <!--Lab worksheet-->
+</div>
+</td><td>
+<div>
+<!--assignment-->
+    
+</div>
+</td></tr>
+
+<tr class="wednesday">
+    <td>
+</td>
+<td>
+14
+</td><td>
+Tue 12 Oct
+</td><td>
+Lab
+</td><td>
+<!--slides-->
+</td><td>
+<!--Reading-->
+</td><td>
+<div>
+    <!--Lab worksheet-->
+    <a href="https://github.com/salrehaili/CS211_Fall2021/tree/main/sorting" target="_blank"><strong class="label label-code">code</strong>
+</div>
+</td><td>
+<div>
+<!--assignment-->
+    
+</div>
+</td></tr>
+
+<tr class="monday">
+    <td rowspan="span">
+Week 8
+</td>
+<td>
+15
+</td><td>
+Sun 17 Oct
+</td><td>
+Long weekend holiday
+</td><td>
+<!--slides-->
+</td><td>
+<!--Reading-->
+</td><td>
+<div>
+    <!--Lab worksheet-->
+</div>
+</td><td>
+<div>
+<!--assignment-->
+    
+</div>
+</td></tr>
+
+<tr class="monday">
+    <td>
+</td>
+<td>
+16
+</td><td>
+Tue 19 Oct
+</td><td>
+Quiz
+</td><td>
+<!--slides-->
+</td><td>
+<!--Reading-->
+</td><td>
+<div>
+    <!--Lab worksheet-->
+</div>
+</td><td>
+<div>
+<!--assignment-->
+    
+</div>
+</td></tr>
+
+<tr class="wednesday">
+    <td rowspan="span">
+Week 9
+</td>
+<td>
+17
+</td><td>
+Sun 24 Oct
+</td><td>
+Midterm exam
+</td><td>
+<!--slides-->
+</td><td>
+<!--Reading-->
+</td><td>
+<div>
+    <!--Lab worksheet-->
+</div>
+</td><td>
+<div>
+<!--assignment-->
+    
+</div>
+</td></tr>
+
+<tr class="wednesday">
+    <td>
+</td>
+<td>
+18
+</td><td>
+Tue 26 Oct
+</td><td>
+Midterm exam
+</td><td>
+<!--slides-->
+</td><td>
+<!--Reading-->
+</td><td>
+<div>
+    <!--Lab worksheet-->
+</div>
+</td><td>
+<div>
+<!--assignment-->
+    
+</div>
+</td></tr>
+
+<tr class="monday">
+    <td rowspan="span">
+Week 10
+</td>
+<td>
+19
+</td><td>
+Sun 31 Oct
+</td><td>
+Recursion
+</td><td>
+<!--slides-->
+<a href="./assets/docs/Recursion.pdf" target="_blank"><strong class="label label-lecture">Recursion</strong></a><a href="./assets/docs/Part5_Recursion.pptx.pdf" target="_blank"><strong class="label label-lecture">Lecture09</strong></a><a href="https://youtu.be/7HR0NrFWCh4" target="_blank"><strong class="label label-disc">Video</strong></a>
+</td><td>
+<!--Reading-->
+</td><td>
+<div>
+    <!--Lab worksheet-->
+</div>
+</td><td>
+<div>
+<!--assignment-->
+    
+</div>
+</td></tr>
+
+<tr class="monday">
+    <td>
+</td>
+<td>
+20
+</td><td>
+Tue 02 Nov
+</td><td>
+Lab
+</td><td>
+<!--slides-->
+<a href="https://youtu.be/01WOfHiQYK8" target="_blank"><strong class="label label-disc">Video</strong></a>
+</td><td>
+<!--Reading-->
+</td><td>
+<div>
+    <!--Lab worksheet-->
+    <a href="./assets/docs/Lab08.pdf" target="_blank"><strong class="label label-lab">Lab8</strong></a>
+    <a href="https://github.com/salrehaili/CS211_Fall2021/tree/main/recursion" target="_blank"><strong class="label label-code">code</strong></a>
+</div>
+</td><td>
+<div>
+<!--assignment-->
+ <p><a href="./assets/docs/assign04.pdf" target="_blank"><strong class="label label-assignment">Assignment04</strong></a><strong class="label label-due">Due Sun 07 Nov</strong></p><a href="./assets/docs/assign04_sol.pdf" target="_blank"><strong class="label label-assignment_sol">Solutions</strong></a>
+</div>
+</td></tr>
+
+<tr class="wednesday">
+    <td rowspan="span">
+Week 11
+</td>
+<td>
+21
+</td><td>
+Sun 07 Nov
+</td><td>
+Linked Lists
+</td><td>
+<!--slides-->
+<a href="./assets/docs/part6_linked_lists.pdf" target="_blank"><strong class="label label-lecture">Linked Lists</strong></a><a href="https://youtu.be/BGEr2mfUx48" target="_blank"><strong class="label label-disc">Video</strong></a>
+</td><td>
+<!--Reading-->
+</td><td>
+<div>
+    <!--Lab worksheet-->
+</div>
+</td><td>
+<div>
+<!--assignment-->
+    
+</div>
+</td></tr>
+
+<tr class="wednesday">
+    <td>
+</td>
+<td>
+22
+</td><td>
+Tue 09 Nov
+</td><td>
+Lab
+</td><td>
+<!--slides-->
+<a href="https://youtu.be/GkZnLPbM1ZE" target="_blank"><strong class="label label-disc">Video</strong></a>
+</td><td>
+<!--Reading-->
+</td><td>
+<div>
+    <!--Lab worksheet-->
+    <a href="./assets/docs/LinkedLists_lab.pdf" target="_blank"><strong class="label label-lab">Lab9</strong></a>
+    <a href="https://github.com/salrehaili/CS211_Fall2021/tree/main/Linked_List" target="_blank"><strong class="label label-code">code</strong></a>
+</div>
+</td><td>
+<div>
+<!--assignment-->
+    <p><a href="./assets/docs/assign05.pdf" target="_blank"><strong class="label label-assignment">Assignment05</strong></a><strong class="label label-due">Due Sun 14 Nov</strong></p><a href="./assets/docs/assign05_sol.pdf" target="_blank"><strong class="label label-assignment_sol">Solutions</strong></a>
+</div>
+</td></tr>
+
+<tr class="monday">
+    <td rowspan="span">
+Week 12
+</td>
+<td>
+23
+</td><td>
+Sun 14 Nov
+</td><td>
+Stacks
+</td><td>
+<!--slides-->
+<a href="./assets/docs/Stacks.pdf" target="_blank"><strong class="label label-lecture">Stacks</strong></a><a href="https://youtu.be/kBgafoqNc9g" target="_blank"><strong class="label label-disc">Video</strong></a>
+</td><td>
+<!--Reading-->
+</td><td>
+<div>
+    <!--Lab worksheet-->
+</div>
+</td><td>
+<div>
+<!--assignment-->
+    
+</div>
+</td></tr>
+
+<tr class="monday">
+    <td>
+</td>
+<td>
+24
+</td><td>
+Tue 16 Nov
+</td><td>
+Lab
+</td><td>
+<!--slides-->
+<a href="https://youtu.be/imfb-xKoRW8" target="_blank"><strong class="label label-disc">Video</strong></a><a href="https://youtu.be/TBDP0vin__0" target="_blank"><strong class="label label-disc">PostFix</strong></a><a href="https://youtu.be/IHL5VWn8eVQ" target="_blank"><strong class="label label-disc">Stack_LinkedList</strong></a><a href="https://youtu.be/fdUM4Sdo0CI" target="_blank"><strong class="label label-disc">Reversing</strong></a>
+</td><td>
+<!--Reading-->
+</td><td>
+<div>
+    <!--Lab worksheet-->
+    <a href="https://github.com/salrehaili/CS211_Fall2021/tree/main/stack" target="_blank"><strong class="label label-code">code</strong></a>
+</div>
+</td><td>
+<div>
+<!--assignment-->
+    
+</div>
+</td></tr>
+
+<tr class="wednesday">
+    <td rowspan="span">
+Week 13
+</td>
+<td>
+25
+</td><td>
+Sun 21 Nov
+</td><td>
+Queues
+</td><td>
+<!--slides-->
+<a href="./assets/docs/Queues.pdf" target="_blank"><strong class="label label-lecture">Queues</strong></a><a href="https://youtu.be/vsV_gaz9xUk" target="_blank"><strong class="label label-disc">Queues</strong></a>
+</td><td>
+<!--Reading-->
+</td><td>
+<div>
+    <!--Lab worksheet-->
+    
+</div>
+</td><td>
+<div>
+<!--assignment-->
+    
+</div>
+</td></tr>
+
+<tr class="wednesday">
+    <td>
+</td>
+<td>
+26
+</td><td>
+Tue 23 Nov
+</td><td>
+Lab
+</td><td>
+<!--slides-->
+<a href="https://youtu.be/OocfNssQKxg" target="_blank"><strong class="label label-disc">Lab</strong></a>
+</td><td>
+<!--Reading-->
+</td><td>
+<div>
+    <!--Lab worksheet-->
+    <a href="https://github.com/salrehaili/CS211_Fall2021/tree/main/queue" target="_blank"><strong class="label label-code">code</strong></a>
+</div>
+</td><td>
+<div>
+<!--assignment-->
+    
+</div>
+</td></tr>
+
+<tr class="monday">
+    <td rowspan="span">
+Week 14
+</td>
+<td>
+
+</td><td>
+Sun 28 Nov
+</td><td>
+Holiday
+</td><td>
+<!--slides-->
+</td><td>
+<!--Reading-->
+</td><td>
+<div>
+    <!--Lab worksheet-->
+</div>
+</td><td>
+<div>
+<!--assignment-->
+    
+</div>
+</td></tr>
+
+<tr class="monday">
+    <td>
+</td>
+<td>
+
+</td><td>
+Tue 30 Nov
+</td><td>
+Holiday
+</td><td>
+<!--slides-->
+</td><td>
+<!--Reading-->
+</td><td>
+<div>
+    <!--Lab worksheet-->
+</div>
+</td><td>
+<div>
+<!--assignment-->
+    
+</div>
+</td></tr>
+
+
+<tr class="wednesday">
+    <td rowspan="span">
+Week 15
+</td>
+<td>
+27
+</td><td>
+Sun 05 Dec
+</td><td>
+Tree
+</td><td>
+<!--slides-->
+<a href="./assets/docs/Part8_Trees_simplified.pptx.pdf" target="_blank"><strong class="label label-lecture">Trees</strong></a><a href="https://youtu.be/_Ms7A8V-9RY" target="_blank"><strong class="label label-disc">Trees</strong></a>
+</td><td>
+<!--Reading-->
+</td><td>
+<div>
+    <!--Lab worksheet-->
+</div>
+</td><td>
+<div>
+<!--assignment-->
+    
+</div>
+</td></tr>
+
+<tr class="wednesday">
+    <td>
+</td>
+<td>
+28
+</td><td>
+Tue 07 Dec
+</td><td>
+Lab
+</td><td>
+<!--slides-->
+<a href="https://youtu.be/1kMtZKaSVLw" target="_blank"><strong class="label label-disc">Lab01</strong></a><a href="https://youtu.be/YVkatRA2y7s" target="_blank"><strong class="label label-disc">Lab02</strong></a><a href="https://youtu.be/O3a_IQbjqSg" target="_blank"><strong class="label label-disc">Important</strong></a>
+
+</td><td>
+<!--Reading-->
+</td><td>
+<div>
+    <!--Lab worksheet-->
+        <a href="https://github.com/salrehaili/CS211_Fall2021/tree/main/tree" target="_blank"><strong class="label label-code">code</strong></a>
+
+</div>
+</td><td>
+<div>
+<!--assignment-->
+    
+</div>
+</td></tr>
+
+
+
+<tr class="monday">
+    <td rowspan="span">
+Week 16
+</td>
+<td>
+29
+</td><td>
+Sun 12 Dec
+</td><td>
+Review
+</td><td>
+<!--slides-->
+</td><td>
+<!--Reading-->
+</td><td>
+<div>
+    <!--Lab worksheet-->
+</div>
+</td><td>
+<div>
+<!--assignment-->
+    
+</div>
+</td></tr>
+
+<tr class="monday">
+    <td>
+</td>
+<td>
+
+</td><td>
+Tue 14 Dec
+</td><td>
+Final lab exam
+</td><td>
+<!--slides-->
+</td><td>
+<!--Reading-->
+</td><td>
+<div>
+    <!--Lab worksheet-->
+</div>
+</td><td>
+<div>
+<!--assignment-->
+    
+</div>
+</td></tr>
+
+
+<tr class="wednesday">
+<td rowspan="span">
+Week 18
+</td><td>
+
+</td><td>
+Sun 26 Dec
+</td><td>
+Final Exam 08:30 - 10:30 at Hall1, Hall2, and Library
+</td><td>
+</td><td>
+</td><td>
+</td><td>
+<div><!--Final (8 AM - 11 AM)--></div>
+</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: 'center'," +
+        "    displayIndent: '0em'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['$','$'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
+        "    } " +
+        "}); ";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+
+
+</section><!-- /#content -->
+  </div>
+  <footer id="contentinfo" class="body">
+  </footer><!-- /#contentinfo -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified Bootstrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
+
+<script>
+  $(document).ready(function() {
+
+    // Announcements
+    var announcementIndex = 0;
+
+    function setAnnouncements(offset) {
+      var newIndex = announcementIndex  + offset;
+      var announcementNumber = $('.announcement').length;
+
+      if (newIndex < 0 || newIndex >= announcementNumber) {
+        return;
+      }
+
+      $('#announcement-' + announcementIndex).hide(0, function() {
+        $('#announcement-' + newIndex).show(0);
+      });
+
+      announcementIndex = newIndex;
+
+      if (announcementIndex >= announcementNumber - 1) {
+        $('#announcement-' + announcementIndex + ' .announcement-btn-older')
+          .addClass('disabled');
+      }
+      if (announcementIndex === 0) {
+        $('#announcement-' + announcementIndex + ' .announcement-btn-newer')
+          .addClass('disabled');
+      }
+    }
+    setAnnouncements(0);
+
+    $('.announcement-btn-newer > a').click(function() {
+      setAnnouncements(-1);
+    });
+    $('.announcement-btn-older > a').click(function() {
+      setAnnouncements(1);
+    });
+  });
+
+</script>
+
+<br />
+</body>
+</html>
